@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactForm from './ContactForm';
-import Image from 'next/image';
 import s from './ContactSection.module.scss';
 
 const ContactSection = () => {
@@ -33,4 +32,4 @@ const ContactSection = () => {
     )
 }
 
-export default ContactSection
+export default ContactSection;

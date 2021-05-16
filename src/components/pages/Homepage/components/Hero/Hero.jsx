@@ -5,6 +5,9 @@ import s from './Hero.module.scss';
 import Button from '../Button/Button';
 
 const Hero = () => {
+
+    const handleClick = () => window.location.href='/#contact';
+
     return (
         <section id="hero" className={s.hero}>
             <div className="container">
@@ -16,7 +19,7 @@ const Hero = () => {
                             Look Their <span>Best!</span>
                         </h1>
                         <p>Book an Appointment Today to make your dog feel - and look - their best! Our spa is like a “home-away-from-home” for your furry friend!</p>
-                        <Button value="Make an Appointment" color='primary' />
+                        <Button value="Make an Appointment" color="primary" onClick={handleClick} />
                     </div>
                     <div className={s.heroDog}>
                         <Image

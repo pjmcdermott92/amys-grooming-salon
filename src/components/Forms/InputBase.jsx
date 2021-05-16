@@ -33,4 +33,4 @@ const InputBase = ({ name, className, label, type, value, error, options, onChan
     return null;
 }
 
-export default InputBase
+export default InputBase;

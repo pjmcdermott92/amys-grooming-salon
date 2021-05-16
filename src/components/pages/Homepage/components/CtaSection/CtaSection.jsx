@@ -13,10 +13,12 @@ const CtaStyles = {
 }
 
 const CtaSection = () => {
+
+    const handleClick = () => window.location.href='/#contact';
     return (
         <div style={CtaStyles}>
             <h2 style={{paddingRight: '2rem', fontFamily: 'var(--font-stack-primary)'}}>Get Your Pet Looking - And Feeling - Cleaner Today!</h2>
-            <Button value="Make an Appointment" color="light" />
+            <Button value="Make an Appointment" color="light" onClick={handleClick} />
         </div>
     )
 }

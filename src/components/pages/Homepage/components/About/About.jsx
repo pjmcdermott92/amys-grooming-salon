@@ -20,7 +20,7 @@ const About = () => {
                         <p>My name is Amy Butler and I have been very blessed in my life to have been able to have a job I absolutely love. I have had the honor of grooming dogs for over 20 years and have enjoyed every bit of it. I strive very hard to have a sense of comfort and calmness for each dog during their visit.</p>
                         <div style={{textAlign: 'center', padding: '.5rem 0'}}>
                             <Image
-                                src='/bone.png'
+                                src="/bone.png"
                                 alt="Bone"
                                 aria-hidden={true}
                                 width={87}

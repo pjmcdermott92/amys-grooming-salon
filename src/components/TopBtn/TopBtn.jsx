@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import s from './TopBtn.module.scss';
 
 const TopBtn = () => {
@@ -25,4 +25,4 @@ const TopBtn = () => {
     else return null;
 }
 
-export default TopBtn
+export default TopBtn;
