@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { font-size: var(--base-font-size); scroll-behavior: smooth; }
+body {
+    font-family: var(--font-stack-primary);
+    background-color: #F6F6F6;
+}
+
+h1, h2 {
+    font-family: var(--font-stack-accent);
+    font-weight: 700;
+}
+
+p { margin: 1rem 0; }
+
+h1 { font-size: calc(1.4rem + 1.5vw); }
+h2 { font-size: calc(1.1rem + 1vw); }
+
+.pageWrapper {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.contentWrapper { padding-bottom: var(--footer-height); }
+
+.pageFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+
+    p { margin: 0; }
+}
+
+a {
+    color: var(--color-blue-link);
+    text-decoration: none;
+    
+    &:hover, &:active { color: var(--color-blue-link-dark); }
+}

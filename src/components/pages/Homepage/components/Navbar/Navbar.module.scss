@@ -1,0 +1,98 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem .5rem;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px #00000025;
+    font-family: var(--font-stack-accent);
+    z-index: 1;
+}
+
+.brandLogo {
+    transform: rotate(-10deg);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.mobileNav {
+    position: absolute;
+    top: 5.95rem;
+    right: 0;
+    left: 0;
+    background-color: var(--color-white);
+    font-size: 1.5rem;
+    list-style: none;
+    text-align: center;
+    transition: 250ms ease-in-out;
+
+    .navLink:first-child { padding-top: 2rem; }
+}
+
+.navLink {
+    padding: .3rem;
+}
+
+.mobileToggleBtn {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+
+    .bars {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--color-blue-link-dark);
+        border-radius: 40px;
+        transition: 250ms ease-in-out;
+
+        &::before, &::after {
+            content: '';
+            @extend .bars;
+            position: absolute;
+        }
+
+        &::before { top: 0; }
+        &::after { bottom: 0; }
+    }
+}
+
+.mobileToggleBtnOpen {
+    @extend .mobileToggleBtn;
+
+    .bars {
+        transform: rotate(45deg);
+
+        &::before {
+            transform: rotate(-90deg);
+        }
+
+        &::after {
+            opacity: 0;
+        }
+    }
+}
+
+.mobileOpen {
+    @extend .mobileNav;
+    height: 40vh;
+}
+
+.mobileClosed {
+    @extend .mobileNav;
+    height: 0;
+    opacity: 0;
+}

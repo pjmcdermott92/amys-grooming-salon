@@ -1,0 +1,36 @@
+.aboutSection {
+    position: relative;
+    min-height: 40rem;
+    margin: 1rem 0;
+    padding: 4rem 0 0;
+    overflow: hidden;
+    font-size: 1.1rem;
+
+    p:last-child {
+        font-size: 1rem;
+    }
+}
+
+.aboutBackground {
+    position: absolute;
+    top: 8rem;
+    width: 150%;
+    height: 450px;
+    margin-left: -5rem;
+    background-color: var(--color-primary-light);
+    border: 3rem solid var(--color-primary-dark);
+    transform: rotate(4deg);
+    z-index: -3;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & > div {
+        max-width: 650px;
+        margin-top: 3rem;
+    }
+}

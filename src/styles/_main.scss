@@ -1,0 +1,42 @@
+.accentFont { color: var(--color-accent); }
+
+.pageFooter {
+    padding: .5rem .5rem 1rem;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    text-align: center;
+    font-size: .85rem;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contentBox {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.btn {
+    padding: .5rem .75rem;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+
+    &.btn-primary {
+        background-color: var(--color-primary-dark);
+
+        &:hover {
+            background-color: var(--color-primary-light);
+        }
+    }
+}
