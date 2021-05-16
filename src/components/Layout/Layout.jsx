@@ -1,4 +1,5 @@
 import React from 'react';
+import TopBtn from '../TopBtn/TopBtn';
 import HeaderBackground from './HeaderBackground/HeaderBackground';
 
 const Layout = ({ children }) => {
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
                     <p>Page designed and built by <a href="http://www.pjmcdermott.com/" target="_blank" rel="noreferrer">Patrick J. McDermott</a>.</p>
                 </footer>
             </div>
+            <TopBtn />
         </div>
     )
 }

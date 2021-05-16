@@ -1,5 +1,4 @@
 .testimonialsSection {
-    margin: 0 0 1rem;
     padding: 1rem;
     background: {
         image: url('../../../../../../public/prints-bg.png');
@@ -11,7 +10,7 @@
 .testimonialsWrapper {
     display: flex;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 

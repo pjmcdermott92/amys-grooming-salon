@@ -1,9 +1,13 @@
-import React from 'react'
-import About from './components/About/About'
-import CtaSection from './components/CtaSection/CtaSection'
-import Hero from './components/Hero/Hero'
-import ServicesSection from './components/ServicesSection/ServicesSection'
-import Testimonials from './components/Testimonials/Testimonials'
+import React from 'react';
+import {
+    Hero,
+    About,
+    ServicesSection,
+    CtaSection,
+    Testimonials,
+    FindUsSection,
+    ContactSection
+} from './components'
 
 const Homepage = () => {
     return (
@@ -13,6 +17,8 @@ const Homepage = () => {
           <ServicesSection />
           <CtaSection />
           <Testimonials />
+          <FindUsSection />
+          <ContactSection />
         </>
     )
 }

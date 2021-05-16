@@ -18,23 +18,25 @@ const Navbar = () => {
     });
 
     const LINKS = [
-        { name: 'About', url: '' },
-        { name: 'Services', url: '' },
-        { name: 'Testimonials', url: '' },
-        { name: 'Find Us', url: '' },
-        { name: 'Contact', url: '' },
+        { name: 'About', url: '#about' },
+        { name: 'Services', url: '#services' },
+        { name: 'Testimonials', url: '#testimonials' },
+        { name: 'Find Us', url: '#findus' },
+        { name: 'Contact', url: '#contact' },
     ];
 
     const renderLinks = () => {
         return LINKS.map((link, index) => {
             const { name, url } = link;
             return (
-                <li key={index} className={s.navLink}>
-                    {name}
+                <li key={index} className={s.navLink} onClick={handleToggleMenu}>
+                    <a href={url}>{name}</a>
                 </li>
             )
         })
     }
+
+    const handleToggleMenu = () => setMobileOpen(!mobileOpen);
 
     const mobileNav = (
         <ul className={mobileOpen ? s.mobileOpen : s.mobileClosed}>
@@ -60,8 +62,6 @@ const Navbar = () => {
         }
         return null;
     }
-
-    const handleToggleMenu = () => setMobileOpen(!mobileOpen);
 
     return (
         <div className={s.navbar}>
