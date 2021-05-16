@@ -1,0 +1,66 @@
+.servicesSection {
+    position: relative;
+    min-height: 10rem;
+    margin: 1rem 0;
+}
+
+.servicesBg {
+    position: absolute;
+    top: 2rem;
+    width: 110%;
+    height: 150px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 2px #00000055;
+    z-index: -2;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & > div:first-child {
+        position: relative;
+        width: 100%;
+        max-width: 650px;
+
+        h3 { padding: .5rem 0 0; }
+    }
+
+    & > div:last-child {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.pawPrintUl {
+    margin: .5rem 1.5rem;
+    list-style-image: url('../../../../../../public/print-bullet.png');
+
+    li {
+        padding: .3rem 0;
+        font-weight: 600;
+    }
+}
+
+.doggieGraphic {
+    position: absolute;
+    bottom: .5rem;
+    right: .75rem;
+}
+
+.noticeDanger {
+    margin: 1.5rem 0;
+    padding: .5rem;
+    background-color: var(--color-red-light);
+    border: 1px solid var(--color-red-dark);
+
+    p { margin: 0; font-size: .85rem;}
+}
+
+.newClients {
+   h3, p { margin: 0; }
+   p { font-size: .85rem; font-style: italic;}
+   .red { color: var(--color-red-dark); font-weight: 700; }
+}
