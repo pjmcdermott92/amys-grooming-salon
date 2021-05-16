@@ -1,4 +1,5 @@
 .accentFont { color: var(--color-accent); }
+.accentFontLight { color: var(--color-primary-dark); }
 
 .pageFooter {
     padding: .5rem .5rem 1rem;
@@ -37,6 +38,14 @@
 
         &:hover {
             background-color: var(--color-primary-light);
+        }
+    }
+
+    &.btn-light {
+        background-color: var(--color-white);
+
+        &:hover {
+            background-color: var(--color-bg);
         }
     }
 }
